@@ -1,0 +1,50 @@
+{% extends 'index1.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+        inquiry
+{% endblock %}
+{% block content %}
+<br>
+<div class="card col-12">
+    <div class="card-header">
+        <h3 class="card-title">inquiry</h3>
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table">
+            <thead>
+                <tr>
+                    <td>FirstName</td>
+                    <td>LastName</td>
+                    <td>Gender</td>
+                    <td>Year</td>
+                    <td>TeamName</td>
+                    <td>CoachFirstName</td>
+                    <td>CoachLastName</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in evalutions %}
+                <tr>
+                    
+                    <td>{{ data.FirstName }}</td>
+                    <td>{{ data.LastName }}</td>
+                    <td>{{ data.Gender }}</td>
+                    <td>{{ data.Year }}</td>
+                    <td>{{ data.TeamName }}</td>
+                    <td>{{ data.CoachFirstName }}</td>
+                    <td>{{ data.CoachLastName }}</td>
+                    
+                    <td>
+                        <a href="{% url 'updateevalution' data.id %}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                        <a href="{% url 'deleteevalution' data.id %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                
+                    </td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

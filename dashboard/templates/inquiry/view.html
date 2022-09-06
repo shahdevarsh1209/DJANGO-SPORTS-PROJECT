@@ -1,0 +1,48 @@
+{% extends 'index1.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+        inquiry
+{% endblock %}
+{% block content %}
+<br>
+<div class="card col-12">
+    <div class="card-header">
+        <h3 class="card-title">inquiry</h3>
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Gender</td>
+                    <td>School</td>
+                    <td>ParentsName</td>
+                    <td>Email</td>
+                    <td>PlayedTournament</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in inquirys %}
+                <tr>
+                    
+                    <td>{{ data.Name }}</td>
+                    <td>{{ data.Gender }}</td>
+                    <td>{{ data.School }}</td>
+                    <td>{{ data.ParentsName }}</td>
+                    <td>{{ data.Email }}</td>
+                    <td>{{ data.PlayedTournament }}</td>
+                    
+                    <td>
+                        <a href="{% url 'updateinquiry' data.id %}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                        <a href="{% url 'deleteinquiry' data.id %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                
+                    </td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

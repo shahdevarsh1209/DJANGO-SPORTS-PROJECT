@@ -1,0 +1,46 @@
+{% extends 'index1.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+        membership
+{% endblock %}
+{% block content %}
+<br>
+<div class="card col-12">
+    <div class="card-header">
+        <h3 class="card-title">membership</h3>
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table">
+            <thead>
+                <tr>
+                    <td>FirstName</td>
+                    <td>LastName</td>
+                    <td>Email</td>
+                    <td>PhoneNumber</td>
+                    <td>Address</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in memberships %}
+                <tr>
+                    
+                    <td>{{ data.FirstName }}</td>
+                    <td>{{ data.LastName }}</td>
+                    <td>{{ data.Email }}</td>
+                    <td>{{ data.PhoneNumber }}</td>
+                    <td>{{ data.Address }}</td>
+                    
+                    <td>
+                        <a href="{% url 'updatemembership' data.id %}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                        <a href="{% url 'deletemembership' data.id %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                
+                    </td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
