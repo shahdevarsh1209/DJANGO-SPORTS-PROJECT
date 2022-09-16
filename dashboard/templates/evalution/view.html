@@ -1,13 +1,16 @@
 {% extends 'index1.html' %}
 {% load crispy_forms_tags %}
 {% block title %}
-        inquiry
+    Evalution
 {% endblock %}
 {% block content %}
 <br>
 <div class="card col-12">
     <div class="card-header">
-        <h3 class="card-title">inquiry</h3>
+        <h3 class="card-title">Details Of Evalution</h3></div>
+        <button><a href="{% url 'addevalution' %}">Add Data</a></button>
+        
+        
     </div>
     <div class="card-body">
         <table id="example1" class="table">

@@ -1,0 +1,51 @@
+{% extends 'index1.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+     Volleyball
+{% endblock %}
+{% block content %}
+<br>
+<div class="card col-12">
+    <div class="card-header">
+        <h3 class="card-title">Details Of Volleyball</h3></div>
+        <button><a href="{% url 'addvolleyball' %}">Add Data</a></button>
+        
+        
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table">
+            <thead>
+                <tr>
+                    <td>nameoftournament</td> 
+                    <td>criteriaofage</td>
+                    <td>gender</td>
+                    <td>dept</td>
+                   
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in volleyballs %}
+                <tr>
+                    
+                    <td>{{ data.nameoftournament }}</td>
+                    <td>{{ data.criteriaofage }}</td>
+                    <td>{{ data.gender }}</td>
+                    <td>{{ data.dept }}</td>
+                   
+                    
+                    
+                    <td>
+                        <a href="{% url 'updatevolleyball' data.id %}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                        <a href="{% url 'deletevolleyball' data.id %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                
+                    </td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

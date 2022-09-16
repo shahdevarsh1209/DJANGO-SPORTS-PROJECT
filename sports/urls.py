@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from dashboard import view
+from usersite import views as v1
 
 urlpatterns = [
    path('admin/', admin.site.urls),
+   path('',include('usersite.urls')),
    path('dashboard/',include('MainApp.urls')),
    path('demo1/',include('dashboard.urls')),
    

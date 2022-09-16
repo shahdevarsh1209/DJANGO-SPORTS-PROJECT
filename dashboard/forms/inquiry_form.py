@@ -16,5 +16,5 @@ class inquiryForm(forms.ModelForm):
             "School",
             "ParentsName",
             "Email",
-            "PlayedTournament"
+            "PlayedTournament",
         ]

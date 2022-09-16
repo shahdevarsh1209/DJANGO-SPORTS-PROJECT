@@ -181,87 +181,185 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
       </div>
 
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
+     
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Starter Pages
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'addCategory' %}" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Category</p>
-                </a>
+                    
+            <!-- <li class="nav-item menu-open"> -->
+              <!-- <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-tachometer-alt"></i> -->
+                <li class="nav-item menu-open">
+                  <details>
+                    <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                      Category
+                      <!-- <i class="right fas fa-angle-left"></i> -->
+                    </summary>
+                  <a href="{% url 'addCategory' %}"> Add CategoryData </a>
+                  <br/>
+                  <a href="{% url 'viewCategory' %}"> View CategoryData </a>  
+                </details>
+              
+              </li>
+                <!-- </a> -->
+              
+              
+              
+              
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Player
+                  </summary>
+                <a href="{% url 'addplayer' %}"> Add PlayerData </a>
+                <br/>
+                <a href="{% url 'viewplayer' %}"> View PlayerData </a>
+                </details>
               </li>
           
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'addplayer' %}" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Player</p>
-                </a>
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Tournament
+                  </summary>
+                  <a href="{% url 'addtournament' %}"> Add TournamentData </a>
+                <br/>
+                <a href="{% url 'viewtournament' %}"> View TournamentData </a>
+                </details>
+              </li>
+                
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Membership
+                  </summary>
+                  <a href="{% url 'addmembership' %}"> Add MembershipData </a>
+                <br/>
+                <a href="{% url 'viewmembership' %}"> View MembershipData </a>
+                </details>
+              </li>
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Inquiry Form
+                  </summary>
+                  <a href="{% url 'addinquiry' %}"> Add InquiryData </a>
+                <br/>
+                <a href="{% url 'viewinquiry' %}"> View InquiryData </a>
+                </details>
+              </li>
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Evalution Form
+                  </summary>
+                  <a href="{% url 'addevalution' %}"> Add EvalutionData </a>
+                <br/>
+                <a href="{% url 'viewevalution' %}"> View EvalutionData </a>
+                </details>
+              </li>
+                 
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Roomservice
+                  </summary>
+                  <a href="{% url 'addroomservice' %}"> Add Roomservice </a>
+                <br/>
+                <a href="{% url 'viewroomservice' %}"> View Roomservice </a>
+                </details>
+              </li>
+
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Message
+                  </summary>
+                  <a href="{% url 'addmessage' %}"> Add Message </a>
+                <br/>
+                <a href="{% url 'viewmessage' %}"> View Message </a>
+                </details>
               </li>
           
-            </ul>
-          </ul>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="{% url 'addtournament' %}" class="nav-link active">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Add Tournament</p>
-              </a>
-            </li>
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Cricket
+                  </summary>
+                  <a href="{% url 'addcricket' %}"> Add Cricket Details</a>
+                <br/>
+                <a href="{% url 'viewcricket' %}"> View Cricket Details</a>
+                </details>
+              </li>
+
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Football
+                  </summary>
+                  <a href="{% url 'addfootball' %}"> Add Football Details</a>
+                <br/>
+                <a href="{% url 'viewfootball' %}"> View Football Details</a>
+                </details>
+              </li>
+
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Basketball
+                  </summary>
+                  <a href="{% url 'addbasketball' %}"> Add Basketball Details</a>
+                <br/>
+                <a href="{% url 'viewbasketball' %}"> View Basketball Details</a>
+                </details>
+              </li>
+
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Volleyball
+                  </summary>
+                  <a href="{% url 'addvolleyball' %}"> Add Volleyball Details</a>
+                <br/>
+                <a href="{% url 'viewvolleyball' %}"> View Volleyball Details</a>
+                </details>
+              </li>
+
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Karate
+                  </summary>
+                  <a href="{% url 'addkarate' %}"> Add Karate Details</a>
+                <br/>
+                <a href="{% url 'viewkarate' %}"> View Karate Details</a>
+                </details>
+              </li>
+
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Tabletennis
+                  </summary>
+                  <a href="{% url 'addtt' %}"> Add Tabletennis Details</a>
+                <br/>
+                <a href="{% url 'viewtt' %}"> View Tabletennis Details</a>
+                </details>
+              </li>
+
+              <li class="nav-item menu-open">
+                <details>
+                  <summary class="nav-item menu-open" style="padding: 10px 18px; background-color: #007bff; color: #fff; border-radius: 5px;" >
+                    Weightlifting
+                  </summary>
+                  <a href="{% url 'addwl' %}"> Add Weightlifting Details</a>
+                <br/>
+                <a href="{% url 'viewwl' %}"> View Weightlifting Details</a>
+                </details>
+              </li>
         
-          </ul>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="{% url 'addmembership' %}" class="nav-link active">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Add Membership</p>
-              </a>
-            </li>
-        
-          </ul>
-        </li>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="{% url 'addinquiry' %}" class="nav-link active">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Add Inquiry</p>
-            </a>
-          </li>
-      
-        </ul>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="{% url 'addevalution' %}" class="nav-link active">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Add Evalution</p>
-            </a>
-          </li>
-      
-        </ul>
       </li>
           </nav>
       </nav>
@@ -288,11 +386,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
+    
     <!-- /.content-header -->
 
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+        {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+  
         <div class="row">
           {% block content%}
 
@@ -316,15 +423,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-      Anything you want
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
-</div>
+  
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->

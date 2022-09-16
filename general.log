@@ -1,0 +1,3410 @@
+Watching for file changes with StatReloader
+C:\Users\HP\sports\sports\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\HP\sports\sports\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Platform is running at risk
+C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Platform is running at risk
+INFO C:\Users\HP\sports\dashboard\views\category.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\dashboard\views\category.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\dashboard\middleware\demoMiddleware.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /favicon.ico
+INFO middleware called new
+WARNING Platform is running at risk
+WARNING middleware called new in call
+INFO middleware called new
+WARNING middleware called new in call
+INFO middleware called new
+WARNING middleware called new in call
+INFO middleware called new
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\sports\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/updatemembership/index3.html
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\fields\__init__.py", line 2018, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'index3.html'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\HP\sports\dashboard\views\membership.py", line 24, in updatemembership
+    obj=get_object_or_404(membershipModel,id=id)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\fields\__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'index3.html'.
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /favicon.ico
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+DEBUG Importing BlpImagePlugin
+DEBUG Importing BmpImagePlugin
+DEBUG Importing BufrStubImagePlugin
+DEBUG Importing CurImagePlugin
+DEBUG Importing DcxImagePlugin
+DEBUG Importing DdsImagePlugin
+DEBUG Importing EpsImagePlugin
+DEBUG Importing FitsImagePlugin
+DEBUG Importing FitsStubImagePlugin
+DEBUG Importing FliImagePlugin
+DEBUG Importing FpxImagePlugin
+DEBUG Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG Importing FtexImagePlugin
+DEBUG Importing GbrImagePlugin
+DEBUG Importing GifImagePlugin
+DEBUG Importing GribStubImagePlugin
+DEBUG Importing Hdf5StubImagePlugin
+DEBUG Importing IcnsImagePlugin
+DEBUG Importing IcoImagePlugin
+DEBUG Importing ImImagePlugin
+DEBUG Importing ImtImagePlugin
+DEBUG Importing IptcImagePlugin
+DEBUG Importing JpegImagePlugin
+DEBUG Importing Jpeg2KImagePlugin
+DEBUG Importing McIdasImagePlugin
+DEBUG Importing MicImagePlugin
+DEBUG Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG Importing MpegImagePlugin
+DEBUG Importing MpoImagePlugin
+DEBUG Importing MspImagePlugin
+DEBUG Importing PalmImagePlugin
+DEBUG Importing PcdImagePlugin
+DEBUG Importing PcxImagePlugin
+DEBUG Importing PdfImagePlugin
+DEBUG Importing PixarImagePlugin
+DEBUG Importing PngImagePlugin
+DEBUG Importing PpmImagePlugin
+DEBUG Importing PsdImagePlugin
+DEBUG Importing SgiImagePlugin
+DEBUG Importing SpiderImagePlugin
+DEBUG Importing SunImagePlugin
+DEBUG Importing TgaImagePlugin
+DEBUG Importing TiffImagePlugin
+DEBUG Importing WebPImagePlugin
+DEBUG Importing WmfImagePlugin
+DEBUG Importing XbmImagePlugin
+DEBUG Importing XpmImagePlugin
+DEBUG Importing XVThumbImagePlugin
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING Platform is running at risk
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\HP\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /favicon.ico
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /favicon.ico
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\urls\__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\forms\inquiry_form.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\forms\membership_form.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/addmessage/
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\dashboard\views\message.py", line 15, in addmessage
+    form=membershipModel(request.POST or None)
+NameError: name 'membershipModel' is not defined
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\views\message.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/addmessage/
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\dashboard\views\message.py", line 15, in addmessage
+    form=membershipModel(request.POST or None)
+NameError: name 'membershipModel' is not defined
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/addmessage/
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\dashboard\views\message.py", line 15, in addmessage
+    form=membershipModel(request.POST or None)
+NameError: name 'membershipModel' is not defined
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/addmessage/
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\dashboard\views\message.py", line 15, in addmessage
+    form=membershipModel(request.POST or None)
+NameError: name 'membershipModel' is not defined
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\views\message.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/deletemessage/1
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\dashboard\views\message.py", line 34, in deletemessage
+    obj=get_object_or_404(membershipModel,id=id)
+NameError: name 'membershipModel' is not defined
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\views\message.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\urls\__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/addfootball/
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'sports.dashboard_footballmodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\dashboard\views\football.py", line 17, in addfootball
+    form.save()
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\forms\models.py", line 548, in save
+    self.instance.save()
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'sports.dashboard_footballmodel' doesn't exist")
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /favicon.ico
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\urls\__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\urls\__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/addtt/
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'sports.dashboard_tabletennismodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\dashboard\views\tabletennis.py", line 17, in addtt
+    form.save()
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\forms\models.py", line 548, in save
+    self.instance.save()
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'sports.dashboard_tabletennismodel' doesn't exist")
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\urls\__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /demo1/viewwl/
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'sports.dashboard_weightliftingmodel' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\dashboard\views\weightlifting.py", line 11, in viewwl
+    return render(request, "weightlifting/view.html",context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'sports.dashboard_weightliftingmodel' doesn't exist")
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\views\weightlifting.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\urls\weightlifting.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\urls\weightlifting.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\urls\__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO C:\Users\KRUNAL SHAH\sports\dashboard\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\sports\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\usersite\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/icheck-bootstrap/icheck-bootstrap.min.css
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jqvmap/jqvmap.min.css
+WARNING middleware called new in call
+WARNING Not Found: /dist/css/adminlte.min.css
+WARNING Not Found: /plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+WARNING Not Found: /plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css
+WARNING Not Found: /plugins/fontawesome-free/css/all.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/daterangepicker/daterangepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/summernote/summernote-bs4.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jquery/jquery.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/chart.js/Chart.min.js
+WARNING Not Found: /plugins/jquery-ui/jquery-ui.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/bootstrap/js/bootstrap.bundle.min.js
+WARNING Not Found: /plugins/sparklines/sparkline.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/moment/moment.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jqvmap/maps/jquery.vmap.usa.js
+WARNING Not Found: /plugins/jqvmap/jquery.vmap.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jquery-knob/jquery.knob.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/summernote/summernote-bs4.min.js
+WARNING Not Found: /dist/js/adminlte.js
+WARNING middleware called new 1 in call
+WARNING Not Found: /plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/demo.js
+WARNING Not Found: /plugins/daterangepicker/daterangepicker.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/pages/dashboard.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user1-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/AdminLTELogo.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user8-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user2-160x160.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user3-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user7-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user5-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user6-128x128.jpg
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/fontawesome-free/css/all.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jqvmap/jqvmap.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/icheck-bootstrap/icheck-bootstrap.min.css
+WARNING Not Found: /dist/css/adminlte.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/daterangepicker/daterangepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+WARNING Not Found: /plugins/summernote/summernote-bs4.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jquery/jquery.min.js
+WARNING Not Found: /plugins/bootstrap/js/bootstrap.bundle.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/sparklines/sparkline.js
+WARNING Not Found: /plugins/jquery-ui/jquery-ui.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/chart.js/Chart.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jqvmap/jquery.vmap.min.js
+WARNING Not Found: /plugins/jqvmap/maps/jquery.vmap.usa.js
+WARNING Not Found: /plugins/jquery-knob/jquery.knob.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/AdminLTELogo.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user8-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user1-128x128.jpg
+WARNING Not Found: /dist/img/user3-128x128.jpg
+WARNING Not Found: /plugins/moment/moment.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/daterangepicker/daterangepicker.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/summernote/summernote-bs4.min.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /dist/js/demo.js
+WARNING middleware called new in call
+WARNING Not Found: /plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js
+WARNING Not Found: /plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/adminlte.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/pages/dashboard.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user2-160x160.jpg
+WARNING Not Found: /dist/img/user6-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user7-128x128.jpg
+WARNING Not Found: /dist/img/user5-128x128.jpg
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /plugins/fontawesome-free/css/all.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/css/adminlte.min.css
+WARNING Not Found: /plugins/icheck-bootstrap/icheck-bootstrap.min.css
+WARNING Not Found: /plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+WARNING Not Found: /plugins/jqvmap/jqvmap.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/daterangepicker/daterangepicker.css
+WARNING Not Found: /plugins/summernote/summernote-bs4.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jquery/jquery.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jquery-ui/jquery-ui.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/bootstrap/js/bootstrap.bundle.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/chart.js/Chart.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jqvmap/jquery.vmap.min.js
+WARNING Not Found: /plugins/sparklines/sparkline.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jqvmap/maps/jquery.vmap.usa.js
+WARNING Not Found: /plugins/jquery-knob/jquery.knob.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user3-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/AdminLTELogo.png
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/daterangepicker/daterangepicker.js
+WARNING Not Found: /dist/img/user8-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user1-128x128.jpg
+WARNING Not Found: /plugins/moment/moment.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/summernote/summernote-bs4.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/adminlte.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/pages/dashboard.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /dist/img/user2-160x160.jpg
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/demo.js
+WARNING Not Found: /dist/img/user7-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user5-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user6-128x128.jpg
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/css/adminlte.min.css
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/icheck-bootstrap/icheck-bootstrap.min.css
+WARNING Not Found: /plugins/jqvmap/jqvmap.min.css
+WARNING Not Found: /plugins/fontawesome-free/css/all.min.css
+WARNING Not Found: /plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/summernote/summernote-bs4.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/daterangepicker/daterangepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jquery/jquery.min.js
+WARNING Not Found: /plugins/bootstrap/js/bootstrap.bundle.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jquery-ui/jquery-ui.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /plugins/sparklines/sparkline.js
+WARNING middleware called new in call
+WARNING Not Found: /plugins/chart.js/Chart.min.js
+WARNING Not Found: /plugins/jqvmap/jquery.vmap.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jqvmap/maps/jquery.vmap.usa.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/jquery-knob/jquery.knob.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user3-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /dist/img/user1-128x128.jpg
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/AdminLTELogo.png
+WARNING Not Found: /dist/img/user8-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/daterangepicker/daterangepicker.js
+WARNING Not Found: /plugins/moment/moment.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /plugins/summernote/summernote-bs4.min.js
+WARNING Not Found: /plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/adminlte.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user2-160x160.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /dist/img/user5-128x128.jpg
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/pages/dashboard.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/js/demo.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user7-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /dist/img/user6-128x128.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /homepage
+INFO C:\Users\KRUNAL SHAH\sports\usersite\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/owl.theme.default.min.css
+WARNING Not Found: /css/jquery.fancybox.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /fonts/icomoon/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/jquery-ui.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/bootstrap/bootstrap.css
+WARNING Not Found: /css/owl.carousel.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /fonts/flaticon/font/flaticon.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/aos.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-ui.js
+WARNING Not Found: /js/bootstrap.min.js
+WARNING Not Found: /js/popper.min.js
+WARNING Not Found: /js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/owl.carousel.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.countdown.min.js
+WARNING Not Found: /js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.stellar.min.js
+WARNING Not Found: /js/jquery.easing.1.3.js
+WARNING Not Found: /js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.fancybox.min.js
+WARNING middleware called new 1 in call
+WARNING Not Found: /js/jquery.sticky.js
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/logo_1.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/img_2.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/img_1.jpg
+WARNING Not Found: /images/logo_2.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/10.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/img_3.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/main.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/person_1.jpg
+INFO C:\Users\KRUNAL SHAH\sports\usersite\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\usersite\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/fonts/icomoon/style.css
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/bootstrap/bootstrap.css
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/jquery.fancybox.min.css
+WARNING Not Found: /blog/css/owl.theme.default.min.css
+WARNING Not Found: /blog/css/owl.carousel.min.css
+WARNING Not Found: /blog/css/jquery-ui.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/fonts/flaticon/font/flaticon.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/aos.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/js/owl.carousel.min.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/bootstrap.min.js
+WARNING Not Found: /blog/js/popper.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery-ui.js
+WARNING Not Found: /blog/images/20.jpg
+WARNING Not Found: /blog/js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/13.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/15.jpg
+WARNING Not Found: /blog/js/jquery.stellar.min.js
+WARNING Not Found: /blog/images/19.jpg
+WARNING Not Found: /blog/images/16.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery.sticky.js
+WARNING Not Found: /blog/js/jquery.easing.1.3.js
+WARNING Not Found: /blog/js/aos.js
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery.fancybox.min.js
+WARNING Not Found: /blog/js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/images/17.jpg
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/main.js
+WARNING Not Found: /blog/images/18.jpg
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/fonts/icomoon/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/bootstrap/bootstrap.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /contact/css/owl.carousel.min.css
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/owl.theme.default.min.css
+WARNING Not Found: /contact/css/jquery-ui.css
+WARNING Not Found: /contact/css/jquery.fancybox.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/aos.css
+WARNING Not Found: /contact/fonts/flaticon/font/flaticon.css
+WARNING Not Found: /contact/css/style.css
+WARNING Not Found: /contact/js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING Not Found: /contact/js/popper.min.js
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery-ui.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /contact/js/bootstrap.min.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/bootstrap-datepicker.min.js
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/owl.carousel.min.js
+WARNING Not Found: /contact/js/jquery.easing.1.3.js
+WARNING Not Found: /contact/js/jquery.stellar.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery.fancybox.min.js
+WARNING Not Found: /contact/js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/images/bg_3.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery.mb.YTPlayer.min.js
+WARNING Not Found: /contact/js/main.js
+INFO middleware called new
+INFO middleware called new 1
+ERROR Internal Server Error: /evalution/
+Traceback (most recent call last):
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KRUNAL SHAH\sports\usersite\views.py", line 14, in evalution
+    return render(request,'evalution.html')
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\KRUNAL SHAH\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: evalution.html
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/
+INFO C:\Users\KRUNAL SHAH\sports\usersite\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\KRUNAL SHAH\sports\usersite\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /evaluation/css/owl.carousel.min.css
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/fonts/icomoon/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/css/jquery-ui.css
+WARNING Not Found: /evaluation/css/owl.theme.default.min.css
+WARNING Not Found: /evaluation/css/bootstrap/bootstrap.css
+WARNING Not Found: /evaluation/css/jquery.fancybox.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/css/bootstrap-datepicker.css
+WARNING Not Found: /evaluation/fonts/flaticon/font/flaticon.css
+WARNING Not Found: /evaluation/css/aos.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/css/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /evaluation/js/jquery-3.3.1.min.js
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /evaluation/js/popper.min.js
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/jquery-ui.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/owl.carousel.min.js
+WARNING Not Found: /evaluation/js/bootstrap.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/images/bg_3.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/images/logo.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/jquery.stellar.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/jquery.fancybox.min.js
+WARNING Not Found: /evaluation/js/bootstrap-datepicker.min.js
+WARNING Not Found: /evaluation/js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/jquery.easing.1.3.js
+WARNING Not Found: /evaluation/js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /evaluation/js/main.js
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /css/jquery.fancybox.min.css
+WARNING middleware called new in call
+WARNING Not Found: /css/owl.theme.default.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /fonts/flaticon/font/flaticon.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /css/aos.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/bootstrap.min.js
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-migrate-3.0.1.min.js
+WARNING Not Found: /js/popper.min.js
+WARNING Not Found: /js/jquery-ui.js
+WARNING Not Found: /js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.easing.1.3.js
+WARNING Not Found: /js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/owl.carousel.min.js
+WARNING Not Found: /js/jquery.stellar.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.fancybox.min.js
+WARNING Not Found: /js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/main.js
+WARNING Not Found: /images/logo_1.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /images/logo_2.png
+WARNING middleware called new in call
+WARNING Not Found: /images/10.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/img_2.jpg
+WARNING Not Found: /images/person_1.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/img_3.jpg
+WARNING Not Found: /images/img_1.jpg
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/jquery.fancybox.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/owl.carousel.min.css
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/bootstrap/bootstrap.css
+WARNING Not Found: /blog/fonts/icomoon/style.css
+WARNING Not Found: /blog/css/jquery-ui.css
+WARNING Not Found: /blog/css/owl.theme.default.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/fonts/flaticon/font/flaticon.css
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/aos.css
+WARNING Not Found: /blog/css/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery-ui.js
+WARNING Not Found: /blog/js/bootstrap.min.js
+WARNING Not Found: /blog/js/owl.carousel.min.js
+WARNING Not Found: /blog/js/popper.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/13.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/20.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/15.jpg
+WARNING Not Found: /blog/images/16.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/js/jquery.stellar.min.js
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/19.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/js/jquery.countdown.min.js
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery.fancybox.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/js/bootstrap-datepicker.min.js
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/aos.js
+WARNING Not Found: /blog/js/jquery.easing.1.3.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/js/jquery.sticky.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/js/main.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/18.jpg
+WARNING Not Found: /blog/images/17.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/index.html
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /fonts/flaticon/font/flaticon.css
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /css/jquery.fancybox.min.css
+WARNING middleware called new in call
+WARNING Not Found: /css/owl.theme.default.min.css
+WARNING Not Found: /css/aos.css
+WARNING Not Found: /css/bootstrap-datepicker.css
+WARNING Not Found: /css/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/owl.carousel.min.js
+WARNING Not Found: /js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/bootstrap.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-ui.js
+WARNING Not Found: /js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/popper.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/10.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/logo_1.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/logo_2.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.stellar.min.js
+WARNING Not Found: /js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.easing.1.3.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.fancybox.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/img_1.jpg
+WARNING Not Found: /js/main.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/person_1.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/img_3.jpg
+WARNING Not Found: /images/img_2.jpg
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/css/bootstrap/bootstrap.css
+WARNING middleware called new in call
+WARNING Not Found: /matches/fonts/icomoon/style.css
+WARNING Not Found: /matches/css/owl.theme.default.min.css
+WARNING Not Found: /matches/css/jquery-ui.css
+WARNING Not Found: /matches/css/owl.carousel.min.css
+WARNING Not Found: /matches/css/jquery.fancybox.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/fonts/flaticon/font/flaticon.css
+WARNING Not Found: /matches/css/aos.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/css/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/jquery-ui.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/bootstrap.min.js
+WARNING Not Found: /matches/js/popper.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /matches/js/owl.carousel.min.js
+WARNING middleware called new in call
+WARNING Not Found: /matches/images/bg_3.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/jquery.stellar.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/images/logo_2.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/images/logo_1.png
+WARNING Not Found: /matches/js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/bootstrap-datepicker.min.js
+WARNING Not Found: /matches/js/jquery.easing.1.3.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/jquery.fancybox.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/js/jquery.mb.YTPlayer.min.js
+WARNING Not Found: /matches/js/main.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/images/logo_3.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/images/logo_4.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/images/img_1.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /matches/images/img_2.jpg
+WARNING Not Found: /matches/images/img_3.jpg
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/owl.carousel.min.css
+WARNING middleware called new in call
+WARNING Not Found: /players/css/owl.theme.default.min.css
+WARNING middleware called new in call
+WARNING Not Found: /players/css/jquery.fancybox.min.css
+WARNING Not Found: /players/css/jquery-ui.css
+WARNING Not Found: /players/css/bootstrap/bootstrap.css
+WARNING Not Found: /players/fonts/icomoon/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/fonts/flaticon/font/flaticon.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/style.css
+WARNING Not Found: /players/js/jquery-ui.js
+WARNING Not Found: /players/css/aos.css
+WARNING Not Found: /players/js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/bootstrap/bootstrap.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/js/popper.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/js/bootstrap.min.js
+WARNING Not Found: /players/js/jquery.stellar.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/js/owl.carousel.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/js/bootstrap-datepicker.min.js
+WARNING Not Found: /players/css/jquery-ui.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/js/jquery.easing.1.3.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /players/js/aos.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /players/js/jquery.fancybox.min.js
+WARNING middleware called new in call
+WARNING Not Found: /players/js/jquery.mb.YTPlayer.min.js
+WARNING Not Found: /players/js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/js/main.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /players/images/img_1.jpg
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/owl.carousel.min.css
+WARNING Not Found: /players/images/img_2.jpg
+WARNING Not Found: /players/images/img_3.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/owl.theme.default.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/owl.theme.default.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/jquery.fancybox.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/fonts/flaticon/font/flaticon.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/aos.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/css/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/images/img_3.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /players/images/img_2.jpg
+WARNING middleware called new in call
+WARNING Not Found: /players/images/img_1.jpg
+WARNING Not Found: /players/images/bg_3.jpg
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/fonts/icomoon/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/bootstrap/bootstrap.css
+WARNING Not Found: /contact/js/popper.min.js
+WARNING Not Found: /contact/js/jquery-ui.js
+WARNING Not Found: /contact/css/jquery.fancybox.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/jquery-ui.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/owl.carousel.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/bootstrap-datepicker.css
+WARNING Not Found: /contact/css/owl.theme.default.min.css
+WARNING Not Found: /contact/css/aos.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/fonts/flaticon/font/flaticon.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/css/style.css
+WARNING Not Found: /contact/js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/bootstrap.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/owl.carousel.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery.stellar.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/jquery.easing.1.3.js
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/js/main.js
+WARNING Not Found: /contact/js/jquery.fancybox.min.js
+WARNING Not Found: /contact/js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /contact/images/bg_3.jpg
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/popper.min.js
+WARNING Not Found: /js/jquery-ui.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/bootstrap.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /js/jquery.countdown.min.js
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/owl.carousel.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.stellar.min.js
+WARNING Not Found: /js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.easing.1.3.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.fancybox.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.sticky.js
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.mb.YTPlayer.min.js
+WARNING Not Found: /js/main.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/logo_1.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/10.jpg
+WARNING Not Found: /images/logo_2.png
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /images/person_1.jpg
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/popper.min.js
+WARNING Not Found: /js/bootstrap.min.js
+WARNING Not Found: /js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-3.3.1.min.js
+WARNING Not Found: /js/jquery-ui.js
+WARNING Not Found: /js/owl.carousel.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.easing.1.3.js
+WARNING Not Found: /images/10.jpg
+WARNING Not Found: /js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.fancybox.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.stellar.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.sticky.js
+WARNING Not Found: /js/jquery.mb.YTPlayer.min.js
+WARNING Not Found: /js/main.js
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-ui.js
+WARNING Not Found: /js/owl.carousel.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/popper.min.js
+WARNING Not Found: /js/bootstrap.min.js
+WARNING Not Found: /templates/images/10.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /js/jquery.stellar.min.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.countdown.min.js
+WARNING Not Found: /js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.fancybox.min.js
+WARNING Not Found: /js/jquery.sticky.js
+WARNING Not Found: /js/jquery.easing.1.3.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.mb.YTPlayer.min.js
+WARNING Not Found: /js/main.js
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-ui.js
+WARNING middleware called new in call
+WARNING Not Found: /js/popper.min.js
+WARNING Not Found: /js/bootstrap.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /templates/images/10.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/owl.carousel.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.stellar.min.js
+WARNING Not Found: /js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/bootstrap-datepicker.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.easing.1.3.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.fancybox.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new in call
+WARNING Not Found: /js/main.js
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /js/jquery-3.3.1.min.js
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/popper.min.js
+WARNING Not Found: /js/jquery-ui.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.countdown.min.js
+WARNING Not Found: /templates/images/10.jpg
+WARNING Not Found: /js/bootstrap.min.js
+WARNING Not Found: /js/jquery.stellar.min.js
+WARNING Not Found: /js/bootstrap-datepicker.min.js
+WARNING Not Found: /js/owl.carousel.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /js/main.js
+WARNING middleware called new in call
+WARNING Not Found: /js/jquery.mb.YTPlayer.min.js
+WARNING Not Found: /js/jquery.easing.1.3.js
+WARNING Not Found: /js/aos.js
+WARNING Not Found: /js/jquery.sticky.js
+WARNING Not Found: /js/jquery.fancybox.min.js
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/fonts/icomoon/style.css
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING Not Found: /blog/css/jquery-ui.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/fonts/flaticon/font/flaticon.css
+WARNING Not Found: /blog/css/bootstrap/bootstrap.css
+WARNING Not Found: /blog/css/style.css
+WARNING Not Found: /blog/js/jquery-3.3.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/owl.carousel.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/owl.theme.default.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/jquery.fancybox.min.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/aos.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/css/bootstrap-datepicker.css
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery-migrate-3.0.1.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery-ui.js
+WARNING Not Found: /blog/js/popper.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/bootstrap.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/owl.carousel.min.js
+WARNING Not Found: /blog/js/jquery.stellar.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery.countdown.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/bootstrap-datepicker.min.js
+WARNING Not Found: /blog/images/20.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/13.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/15.jpg
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/aos.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery.easing.1.3.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/images/19.jpg
+WARNING Not Found: /blog/images/16.jpg
+WARNING Not Found: /blog/js/jquery.fancybox.min.js
+WARNING Not Found: /blog/js/jquery.mb.YTPlayer.min.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/jquery.sticky.js
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new 1 in call
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+WARNING middleware called new in call
+WARNING Not Found: /blog/js/main.js
+WARNING Not Found: /blog/images/17.jpg
+WARNING Not Found: /blog/images/18.jpg
+INFO Watching for file changes with StatReloader
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call
+INFO middleware called new
+INFO middleware called new 1
+WARNING middleware called new 1 in call
+WARNING middleware called new in call

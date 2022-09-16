@@ -41,10 +41,39 @@ INSTALLED_APPS = [
     'MainApp',
     'crispy_forms',
     'register',
+    'usersite',
 ]
+LOGGING = {
+    'version':1,
+    'disable_existing_loggers':False,
+    'handlers':{
+        'file':{
+            'class': 'logging.FileHandler',
+            'filename': 'general.log',
+            'formatter': 'simple',
+        },
+    },
+    'loggers':{
+        '':{
+            'level':'DEBUG',
+            'handlers':['file'],
+        },
+    },
+    'formatters': {
+        'verbose': {
+            'format' :'{name} {levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+}
 AUTH_USER_MODEL='dashboard.UserModel'
 CRISPY_TEMPLATE_PACK='bootstrap4'
 LOGIN_REDIRECT_URL='Home'
+MESSAGE_STORAGE='django.contrib.messages.storage.cookie.CookieStorage'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,6 +83,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+   # 'dashboard.middleware.demoMiddleware.demoMiddleware',
+   # 'dashboard.middleware.firstMiddleware.firstMiddleware',
+    'sports.middleware.demoMiddleware.demoMiddleware',
+    'sports.middleware.firstMiddleware.firstMiddleware',
+
 ]
 
 ROOT_URLCONF = 'sports.urls'
@@ -134,6 +168,9 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS=(
     os.path.join(BASE_DIR,'static'),
 )
+
+MEDIA_ROOT=os.path.join(BASE_DIR,'')
+MEDIA_URL='/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

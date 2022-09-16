@@ -7,7 +7,11 @@
 <br>
 <div class="card col-12">
     <div class="card-header">
-        <h3 class="card-title">Category</h3>
+        <h3 class="card-title">Details Of Category</h3></div>
+        <button><a href="{% url 'addCategory' %}">Add Data</a></button>
+        <button><a href="{% url 'bulkUpload' %}" class="btn-btn-success">Bulk Upload</a></button>
+        <button><a href="{% url 'download_csv' %}" class="btn-btn-success">CSV Download</a></button>
+
     </div>
     <div class="card-body">
         <table id="example1" class="table">

@@ -1,0 +1,43 @@
+{% extends 'index1.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+     roomservice
+{% endblock %}
+{% block content %}
+<br>
+<div class="card col-12">
+    <div class="card-header">
+        <h3 class="card-title">Details Of Roomservice</h3></div>
+        <button><a href="{% url 'addroomservice' %}">Add Data</a></button>
+        
+
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table">
+            <thead>
+                <tr>
+                    <td>category</td>
+                    <td>price</td>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in rooms %}
+                <tr>
+                    
+                    <td>{{ data.category }}</td>
+                    <td>{{ data.price }}</td>
+                    <td>
+                        <a href="{% url 'updateroomservice' data.id %}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                        <a href="{% url 'deleteroomservice' data.id %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                
+                    </td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

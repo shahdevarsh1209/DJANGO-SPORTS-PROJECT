@@ -1,0 +1,43 @@
+{% extends 'index1.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+     message
+{% endblock %}
+{% block content %}
+<br>
+<div class="card col-12">
+    <div class="card-header">
+        <h3 class="card-title">Details Of Message</h3></div>
+        <button><a href="{% url 'addmessage' %}">Add Data</a></button>
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table">
+            <thead>
+                <tr>
+                    <td>category</td>
+                    <td>message</td>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in messages %}
+                <tr>
+                    
+                    <td>{{ data.category }}</td>
+                    <td>{{ data.message }}</td>
+                    
+
+                    <td>
+                        <a href="{% url 'updatemessage' data.id %}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                        <a href="{% url 'deletemessage' data.id %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                
+                    </td>
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
