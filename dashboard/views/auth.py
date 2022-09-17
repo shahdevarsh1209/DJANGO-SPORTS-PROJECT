@@ -4,8 +4,10 @@ from django.views.generic.edit import CreateView
 from ..forms.register import CustomUserCreationForm
 
 def index(request):
-    return render(request,"index.html")
+    return render(request,"index1.html")
 
+#def logout1(request):
+ #   return render(request,'login.html')
 
 class SignUp(CreateView):
     form_class = CustomUserCreationForm

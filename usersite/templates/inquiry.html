@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load static %}
 <head>
   <title>Soccer &mdash; Website by Colorlib</title>
   <meta charset="utf-8">
@@ -9,23 +9,23 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="{% static 'templates/fonts/icomoon/style.css' %}">
 
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{% static 'templates/css/bootstrap/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.theme.default.min.css' %}">
 
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="{% static 'templates/css/jquery.fancybox.min.css' %}">
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="{% static 'templates/css/bootstrap-datepicker.css' %}">
 
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="{% static 'templates/fonts/flaticon/font/flaticon.css' %}">
 
-  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="{% static 'templates/css/aos.css' %}">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
 
 
 
@@ -49,14 +49,14 @@
       <div class="container">
         <div class="d-flex align-items-center">
           <div class="site-logo">
-            <a href="index.html">
-              <img src="images/logo.png" alt="Logo">
+            <a href="/">
+              <img src="{% static 'templates/images/logo.png' %}" alt="Logo">
             </a>
           </div>
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-			   <li><a href="index.html" class="nav-link">Home</a></li>
+			   <li><a href="/" class="nav-link">Home</a></li>
 			    </ul>
             </nav>
 
@@ -86,22 +86,23 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <form action="#">
+            <form action="{% url 'inquiryuser' %}" method="POST">
+              {% csrf_token %}
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="First Name" name="First_Name">
               </div>
 			              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Last Name">
+                <input type="text" class="form-control" placeholder="Last Name" name="Last_Name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email">
+                <input type="text" class="form-control" placeholder="Email" name="Email">
               </div>
 			  <div class="form-group">
-                <input type="text" class="form-control" placeholder="Number">
+                <input type="text" class="form-control" placeholder="Number" name="Number">
               </div>
               
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Address">
+                <input type="text" class="form-control" placeholder="Address" name="Address">
               </div>
               <div class="form-group">
                 <input type="submit" class="btn btn-primary py-3 px-5" value="Send Message">

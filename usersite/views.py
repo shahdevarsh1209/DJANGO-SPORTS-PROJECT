@@ -1,4 +1,7 @@
 from django.shortcuts import render,redirect
+from dashboard.models import *
+from usersite.form.inquiryuser_form import inquiryuserForm 
+from usersite.models import *
 #from django.http import HttpResponce
 
 def homepage(request):
@@ -19,6 +22,21 @@ def feedback(request):
 def inquiry(request):
     return render(request,'inquiry.html')
 
+def inquiryuser(request):
+    if request.method == "POST":
+        form = inquiryuserForm(request.POST or None)
+        if form.is_valid():
+            try:
+                form.save()
+                message.success(request,"Done Bka ,DATA SAVE :)")
+                return render(request,'inquiry.html')
+            except:
+                pass
+    else:
+        form = inquiryuserForm()
+    return render(request,'inquiry.html',{'form':form})
+
+
 def main(request):
     return render(request,'main.html')
 
@@ -33,4 +51,9 @@ def single(request):
 
 def tournament(request):
     return render(request,'tournament.html')
+
+def cricket(request):
+    context={}
+    context["crickets"]=cricketModel.objects.all()
+    return render(request,'cricket/cricketview.html',context)
 

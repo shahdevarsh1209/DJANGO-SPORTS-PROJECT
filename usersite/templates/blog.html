@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  {% load static %}
 <head>
   <title>Sports &mdash; Club</title>
   <meta charset="utf-8">
@@ -9,23 +9,22 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="{% static templates/fonts/icomoon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/fonts/icomoon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/bootstrap/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.theme.default.min.css' %}">
 
-  <link rel="stylesheet" href="{% static templates/css/bootstrap/bootstrap.css' %}">
-  <link rel="stylesheet" href="{% static templates/css/jquery-ui.css' %}">
-  <link rel="stylesheet" href="{% static templates/css/owl.carousel.min.css' %}">
-  <link rel="stylesheet" href="{% static templates/css/owl.theme.default.min.css' %}">
-  <link rel="stylesheet" href="{% static templates/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/jquery.fancybox.min.css' %}">
 
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="{% static 'templates/css/bootstrap-datepicker.css' %}">
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="{% static 'templates/fonts/flaticon/font/flaticon.css' %}">
 
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="{% static 'templates/css/aos.css' %}">
 
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
 
 
 
@@ -91,7 +90,7 @@
         <div class="col-lg-4 mb-4">
           <div class="custom-media d-block">
             <div class="img mb-4">
-              <a href="single.html"><img src="images/13.jpg" alt="Image" class="img-fluid"></a>
+              <a href="/single"><img src="{% static 'templates/images/13.jpg' %}" alt="Image" class="img-fluid"></a>
             </div>
             <div class="text">
               <span class="meta">May 20, 2020</span>
@@ -104,7 +103,7 @@
         <div class="col-lg-4 mb-4">
           <div class="custom-media d-block">
             <div class="img mb-4">
-              <a href="single.html"><img src="images/19.jpg" alt="Image" class="img-fluid"></a>
+              <a href="/single"><img src="{% static 'templates/images/19.jpg' %}" alt="Image" class="img-fluid"></a>
             </div>
             <div class="text">
               <span class="meta">May 20, 2020</span>
@@ -118,7 +117,7 @@
         <div class="col-lg-4 mb-4">
           <div class="custom-media d-block">
             <div class="img mb-4">
-              <a href="single.html"><img src="images/15.jpg" alt="Image" class="img-fluid"></a>
+              <a href="/single"><img src="{% static 'templates/images/15.jpg' %}" alt="Image" class="img-fluid"></a>
             </div>
             <div class="text">
               <span class="meta">May 20, 2020</span>
@@ -131,7 +130,7 @@
         <div class="col-lg-4 mb-4">
           <div class="custom-media d-block">
             <div class="img mb-4">
-              <a href="single.html"><img src="images/16.jpg" alt="Image" class="img-fluid"></a>
+              <a href="/single"><img src="{% static 'templates/images/16.jpg' %}" alt="Image" class="img-fluid"></a>
             </div>
             <div class="text">
               <span class="meta">May 20, 2020</span>
@@ -145,7 +144,7 @@
         <div class="col-lg-4 mb-4">
           <div class="custom-media d-block">
             <div class="img mb-4">
-              <a href="single.html"><img src="images/17.jpg" alt="Image" class="img-fluid"></a>
+              <a href="/single"><img src="{% static 'templates/images/17.jpg' %}" alt="Image" class="img-fluid"></a>
             </div>
             <div class="text">
               <span class="meta">May 20, 2020</span>
@@ -158,7 +157,7 @@
         <div class="col-lg-4 mb-4">
           <div class="custom-media d-block">
             <div class="img mb-4">
-              <a href="single.html"><img src="images/18.jpg" alt="Image" class="img-fluid"></a>
+              <a href="/single"><img src="{% static 'templates/images/18.jpg' %}" alt="Image" class="img-fluid"></a>
             </div>
             <div class="text">
               <span class="meta">May 20, 2020</span>

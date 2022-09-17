@@ -1,9 +1,9 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import cricketModel
 from django.shortcuts import render
-
+from django.http import HttpResponse
 from ..forms.cricket_form import cricketForm
-
+import csv
 
 def viewcricket(request):
     context={}
@@ -36,3 +36,13 @@ def deletecricket(request,id):
         obj.delete()
         return redirect("viewcricket")
     return render(request,"cricket/view.html",context)
+
+def download_cricketcsv(request):
+    response =HttpResponse('text/csv')
+    response['Content-Disposition'] = 'attachment; filename=crickettournamentdetails.csv'
+    writer = csv.writer(response)
+    writer.writerow(['nameoftournament','criteriaofage','gender','dept','ground'])
+    for data in cricketModel.objects.all():
+        writer.writerow([data.nameoftournament,data.criteriaofage,data.gender,data.dept,data.ground]) 
+
+    return response
