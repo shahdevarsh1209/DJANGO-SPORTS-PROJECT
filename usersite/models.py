@@ -8,3 +8,10 @@ class inquiryuserModel(models.Model):
     Email=models.CharField(max_length=200)
     Number=models.CharField(max_length=200)
     Address=models.CharField(max_length=200)
+
+class contactuserModel(models.Model):
+    Name=models.CharField(max_length=200)
+    Email=models.CharField(max_length=200)
+    Subject=models.CharField(max_length=200)
+    Number=models.IntegerField()
+    WriteSomething=models.CharField(max_length=200)

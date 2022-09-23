@@ -1,7 +1,9 @@
 from django.shortcuts import render,redirect
 from dashboard.models import *
 from usersite.form.inquiryuser_form import inquiryuserForm 
+from usersite.form.contactuser_form import contactuserForm 
 from usersite.models import *
+from django.contrib import messages
 #from django.http import HttpResponce
 
 def homepage(request):
@@ -12,6 +14,21 @@ def blog(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def contactuser(request):
+    if request.method == "POST":
+        form = contactuserForm(request.POST or None)
+        if form.is_valid():
+            try:
+                form.save()
+                messages.success(request,"Done Bka ,DATA SAVE :)")
+                return render(request,'contact.html')
+            except:
+                pass
+    else:
+        form = contactuserForm()
+    return render(request,'contact.html',{'form':form})
+
 
 def evaluation(request):
     return render(request,'evaluation.html')
@@ -28,7 +45,7 @@ def inquiryuser(request):
         if form.is_valid():
             try:
                 form.save()
-                message.success(request,"Done Bka ,DATA SAVE :)")
+                messages.success(request,"DONE BKA ,DATA SAVE :)")
                 return render(request,'inquiry.html')
             except:
                 pass
