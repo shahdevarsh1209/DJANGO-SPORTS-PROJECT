@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+Weightlifting
+{% endblock %}
+{% block content %}
+<br>
+<div class="card col-12">
+    <div class="card-header">
+        <h3 class="card-title">Details Of Weightlifting</h3></div>
+        <button><a href="{% url 'download_wlcsv' %}" class="btn-btn-success">Weightlifting Details Download</a></button>
+        
+    </div>
+    <div class="card-body">
+        <table id="example1" class="table">
+            <thead>
+                <tr>
+                    <td>nameoftournament</td> 
+                    <td>criteriaofage</td>
+                    <td>gender</td>
+                    <td>dept</td>
+                   
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in wls %}
+                <tr>
+                    
+                    <td>{{ data.nameoftournament }}</td>
+                    <td>{{ data.criteriaofage }}</td>
+                    <td>{{ data.gender }}</td>
+                    <td>{{ data.dept }}</td>
+                    
+                    
+                    
+                  
+                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

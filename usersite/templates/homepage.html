@@ -27,7 +27,7 @@
 
   <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
 
-
+  <link rel="stylesheet" href="{% static 'templates/css/dropdown.css' %}">
 
 </head>
 
@@ -63,7 +63,19 @@
                 <li><a href="/matches" class="nav-link">Matches</a></li>
                 <li><a href="/players" class="nav-link">Players</a></li>
                 <li><a href="/contact/" class="nav-link">Contact</a></li>
-                <li><a href="/cricket/" class="nav-link">Cricket</a></li>
+                <div class="dropdown">
+                  <button class="dropbtn">Event</button>
+                  <div class="dropdown-content">
+                    <a href="/cricket/">Cricket</a>
+                    <a href="/football/">Football</a>
+                    <a href="/basketball/">Basketball</a>
+                    <a href="/volleyball/">Volleyball</a>
+                    <a href="/karate/">Karate</a>
+                    <a href="/tabletennis/">Tabletennis</a>
+                    <a href="/weightlifting/">Weightlifting</a>
+                  
+                  </div>
+                </div>
                 
               </ul>
             </nav>
@@ -482,9 +494,9 @@
               <h3>Form</h3>
               <ul class="list-unstyled links">
                 <li><a href="/inquiry/">Inquiry Form</a></li>
-                <li><a href="/evaluation">Evalution Form</a></li>
-                <li><a href="/tournament">Tournament Form</a></li>
-                <li><a href="/feedback">Feedback</a></li>
+                <li><a href="/evaluation/">Evalution Form</a></li>
+                <li><a href="/tournament/">Tournament Form</a></li>
+                <li><a href="/feedback/">Feedback</a></li>
               </ul>
             </div>
           </div>

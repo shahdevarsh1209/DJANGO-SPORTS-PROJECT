@@ -5,5 +5,6 @@ footballURL=[
     path('addfootball/',addfootball,name="addfootball"),  
     path('updatefootball/<id>',updatefootball,name="updatefootball"), 
     path('deletefootball/<id>',deletefootball,name="deletefootball"),
+    path('download_footballcsv',download_footballcsv,name='download_footballcsv'),
     
 ]

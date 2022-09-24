@@ -5,5 +5,6 @@ tabletennisURL=[
     path('addtt/',addtt,name="addtt"),  
     path('updatett/<id>',updatett,name="updatett"), 
     path('deletett/<id>',deletett,name="deletett"),
-    
+    path('download_tabletenniscsv',download_tabletenniscsv,name='download_tabletenniscsv'),
+
 ]

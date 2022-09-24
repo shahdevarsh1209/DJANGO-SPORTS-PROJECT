@@ -1,9 +1,9 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import weightliftingModel
 from django.shortcuts import render
-
+from django.http import HttpResponse
 from ..forms.weightlifting_form import weightliftingForm
-
+import csv
 
 def viewwl(request):
     context={}
@@ -36,3 +36,13 @@ def deletewl(request,id):
         obj.delete()
         return redirect("viewwl")
     return render(request,"weightlifting/view.html",context)
+
+def download_wlcsv(request):
+    response =HttpResponse('text/csv')
+    response['Content-Disposition'] = 'attachment; filename=weightliftingtournamentdetails.csv'
+    writer = csv.writer(response)
+    writer.writerow(['nameoftournament','criteriaofage','gender','dept'])
+    for data in weightliftingModel.objects.all():
+        writer.writerow([data.nameoftournament,data.criteriaofage,data.gender,data.dept]) 
+
+    return response

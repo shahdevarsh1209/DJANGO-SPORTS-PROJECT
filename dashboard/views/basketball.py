@@ -1,9 +1,9 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import basketballModel
 from django.shortcuts import render
-
+from django.http import HttpResponse
 from ..forms.basketball_form import basketballForm
-
+import csv
 
 def viewbasketball(request):
     context={}
@@ -36,3 +36,13 @@ def deletebasketball(request,id):
         obj.delete()
         return redirect("viewbasketball")
     return render(request,"basketball/view.html",context)
+
+def download_basketballcsv(request):
+    response =HttpResponse('text/csv')
+    response['Content-Disposition'] = 'attachment; filename=basketballtournamentdetails.csv'
+    writer = csv.writer(response)
+    writer.writerow(['nameoftournament','criteriaofage','gender','dept'])
+    for data in basketballModel.objects.all():
+        writer.writerow([data.nameoftournament,data.criteriaofage,data.gender,data.dept]) 
+
+    return response

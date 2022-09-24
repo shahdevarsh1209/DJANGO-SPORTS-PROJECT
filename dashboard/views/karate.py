@@ -1,10 +1,9 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import karateModel
 from django.shortcuts import render
-
+from django.http import HttpResponse
 from ..forms.karate_form import karateForm
-
-
+import csv
 def viewkarate(request):
     context={}
     context["karates"]=karateModel.objects.all()
@@ -36,3 +35,13 @@ def deletekarate(request,id):
         obj.delete()
         return redirect("viewkarate")
     return render(request,"karate/view.html",context)
+
+def download_karatecsv(request):
+    response =HttpResponse('text/csv')
+    response['Content-Disposition'] = 'attachment; filename=karatetournamentdetails.csv'
+    writer = csv.writer(response)
+    writer.writerow(['nameoftournament','criteriaofage','gender','dept'])
+    for data in karateModel.objects.all():
+        writer.writerow([data.nameoftournament,data.criteriaofage,data.gender,data.dept]) 
+
+    return response
