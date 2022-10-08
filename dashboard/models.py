@@ -128,6 +128,7 @@ class CategoryModel(models.Model):
     description= models.TextField()
 
 class playerModel(models.Model):
+    img2=models.ImageField(upload_to='player', blank=True, null=True , default='player/1.jpg')
     Name=models.CharField(max_length=200)
     Age=models.IntegerField()
     Gender=models.CharField(max_length=6,choices=type,default='Male')

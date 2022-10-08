@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import messageModel
 from django.shortcuts import render
+from django.contrib import messages
 
 from ..forms.message_form import messageForm
 
@@ -15,6 +16,7 @@ def addmessage(request):
     form=messageForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewmessage")
     context['form']=form
     return render(request,"message/add.html",context)

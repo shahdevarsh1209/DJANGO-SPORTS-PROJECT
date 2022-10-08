@@ -2,6 +2,8 @@ from django.shortcuts import get_object_or_404,render,redirect
 from ..models import footballModel
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib import messages
+
 from ..forms.football_form import footballForm
 import csv
 
@@ -15,6 +17,7 @@ def addfootball(request):
     form=footballForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewfootball")
     context['form']=form
     return render(request,"football/add.html",context)

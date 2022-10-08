@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import membershipModel
 from django.shortcuts import render
+from django.contrib import messages
 
 from ..forms.membership_form import membershipForm
 
@@ -15,6 +16,7 @@ def addmembership(request):
     form=membershipForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewmembership")
     context['form']=form
     return render(request,"membership/add.html",context)

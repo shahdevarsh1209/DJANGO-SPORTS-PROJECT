@@ -2,6 +2,8 @@ from django.shortcuts import get_object_or_404,render,redirect
 from ..models import cricketModel
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib import messages
+
 from ..forms.cricket_form import cricketForm
 import csv
 
@@ -15,6 +17,7 @@ def addcricket(request):
     form=cricketForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewcricket")
     context['form']=form
     return render(request,"cricket/add.html",context)

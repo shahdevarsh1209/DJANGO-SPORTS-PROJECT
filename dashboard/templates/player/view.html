@@ -4,16 +4,21 @@
         player
 {% endblock %}
 {% block content %}
+<!-- {% if player.img2 %}
+    <img src="{{ player.img2.url }}">
+{% endif %} -->
 <br>
 <div class="card col-12">
     <div class="card-header">
         <h3 class="card-title">Details Of Player</h3></div>
-        <button><a href="{% url 'addplayer' %}">Add Data</a></button>
+      <button><a href="{% url 'addplayer' %}">Add Data</a></button>
     </div>
+    
     <div class="card-body">
         <table id="example1" class="table">
             <thead>
                 <tr>
+                    <td>Image</td>
                     <td>Name</td>
                     <td>Age</td>
                     <td>Gender</td>
@@ -24,7 +29,7 @@
             <tbody>
                 {% for data in players %}
                 <tr>
-                    
+                    <td><img src="{{ data.img2.url }}"  alt="" class="prod-size" height="100px" width="100px"></td>
                     <td>{{ data.Name }}</td>
                     <td>{{ data.Age }}</td>
                     <td>{{ data.Gender }}</td>

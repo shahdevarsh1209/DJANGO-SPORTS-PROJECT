@@ -1,6 +1,6 @@
 ++<!DOCTYPE html>
 <html lang="en">
-
+{% load static %}
 <head>
   <title>Sports &mdash; Club</title>
   <meta charset="utf-8">
@@ -9,23 +9,23 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="{% static 'templates/fonts/icomoon/style.css' %}">
 
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{% static 'templates/css/bootstrap/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'templates/css/owl.theme.default.min.css' %}">
 
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="{% static 'templates/css/jquery.fancybox.min.css' %}">
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="{% static 'templates/css/bootstrap-datepicker.css' %}">
 
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="{% static 'templates/fonts/flaticon/font/flaticon.css' %}">
 
-  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="{% static 'templates/css/aos.css' %}">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
 
 
 
@@ -54,7 +54,7 @@
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-			   <li><a href="index.html" class="nav-link">Home</a></li>
+			   <li><a href="/" class="nav-link">Home</a></li>
 			    </ul>
             </nav>
 
@@ -73,7 +73,7 @@
         <div class="row align-items-center">
           <div class="col-lg-5 mx-auto text-center">
             <h1 class="text-white">Players</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, molestias repudiandae pariatur.</p>
+            
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@
 
     
     
-    <div class="site-section">
+    <!-- <div class="site-section">
       <div class="container">
         <div class="row">
           <div class="col-6 title-section">
@@ -94,14 +94,14 @@
             <a href="#" class="js-custom-next-v2"><span class="icon-keyboard_arrow_right"></span></a>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
         <div class="owl-4-slider owl-carousel">
           <div class="item">
             <div class="video-media">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+              <img src="{% static 'templates/images/img_1.jpg' %}" alt="Image" class="img-fluid">
+              <a href="{% static 'templates/https://vimeo.com/139714818' %}" class="d-flex play-button align-items-center" data-fancybox>
                 <span class="icon mr-3">
                   <span class="icon-play"></span>
                 </span>
@@ -114,8 +114,8 @@
           </div>
           <div class="item">
             <div class="video-media">
-              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+              <img src="{% static 'templates/images/img_2.jpg' %}" alt="Image" class="img-fluid">
+              <a href="{% static 'templates/https://vimeo.com/139714818' %}" class="d-flex play-button align-items-center" data-fancybox>
                 <span class="icon mr-3">
                   <span class="icon-play"></span>
                 </span>
@@ -128,8 +128,8 @@
           </div>
           <div class="item">
             <div class="video-media">
-              <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+              <img src="{% static 'templates/images/img_3.jpg' %}" alt="Image" class="img-fluid">
+              <a href="{% static 'templates/https://vimeo.com/139714818' %}" class="d-flex play-button align-items-center" data-fancybox>
                 <span class="icon mr-3">
                   <span class="icon-play"></span>
                 </span>
@@ -143,8 +143,8 @@
 
           <div class="item">
             <div class="video-media">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+              <img src="{% static 'templates/images/img_1.jpg' %}" alt="Image" class="img-fluid">
+              <a href="{% static 'templates/https://vimeo.com/139714818' %}" class="d-flex play-button align-items-center" data-fancybox>
                 <span class="icon mr-3">
                   <span class="icon-play"></span>
                 </span>
@@ -157,8 +157,8 @@
           </div>
           <div class="item">
             <div class="video-media">
-              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+              <img src="{% static 'templates/images/img_2.jpg' %}" alt="Image" class="img-fluid">
+              <a href="{% static 'templates/https://vimeo.com/139714818' %}" class="d-flex play-button align-items-center" data-fancybox>
                 <span class="icon mr-3">
                   <span class="icon-play"></span>
                 </span>
@@ -171,8 +171,8 @@
           </div>
           <div class="item">
             <div class="video-media">
-              <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-              <a href="https://vimeo.com/139714818" class="d-flex play-button align-items-center" data-fancybox>
+              <img src="{% static 'templates/images/img_3.jpg' %}" alt="Image" class="img-fluid">
+              <a href="{% static 'templates/https://vimeo.com/139714818' %}" class="d-flex play-button align-items-center" data-fancybox>
                 <span class="icon mr-3">
                   <span class="icon-play"></span>
                 </span>
@@ -200,7 +200,7 @@
         <div class="col-lg-6">
           <div class="custom-media d-flex">
             <div class="img mr-4">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+              <img src="{% static 'templates/images/img_1.jpg' %}" alt="Image" class="img-fluid">
             </div>
             <div class="text">
               <span class="meta">May 20, 2020</span>
@@ -213,7 +213,7 @@
         <div class="col-lg-6">
           <div class="custom-media d-flex">
             <div class="img mr-4">
-              <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+              <img src="{% static 'templates/images/img_3.jpg' %}" alt="Image" class="img-fluid">
             </div>
             <div class="text">
               <span class="meta">May 20, 2020</span>

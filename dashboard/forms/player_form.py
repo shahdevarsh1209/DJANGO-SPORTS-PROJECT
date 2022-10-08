@@ -11,6 +11,7 @@ class playerForm(forms.ModelForm):
         model=playerModel
 
         fields=[
+            "img2",
             "Name",
             "Age",
             "Gender",

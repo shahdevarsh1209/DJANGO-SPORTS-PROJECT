@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import tournamentModel
 from django.shortcuts import render
+from django.contrib import messages
 
 from ..forms.tournament_form import tournamentForm
 
@@ -15,6 +16,7 @@ def addtournament(request):
     form=tournamentForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewtournament")
     context['form']=form
     return render(request,"tournament/add.html",context)

@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404,render,redirect
 from ..models import basketballModel
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib import messages
 from ..forms.basketball_form import basketballForm
 import csv
 
@@ -15,6 +16,7 @@ def addbasketball(request):
     form=basketballForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewbasketball")
     context['form']=form
     return render(request,"basketball/add.html",context)

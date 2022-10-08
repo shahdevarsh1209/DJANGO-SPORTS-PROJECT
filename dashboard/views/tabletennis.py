@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from ..forms.tabletennis_form import tabletennisForm
 import csv
+from django.contrib import messages
 
 def viewtt(request):
     context={}
@@ -15,6 +16,7 @@ def addtt(request):
     form=tabletennisForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewtt")
     context['form']=form
     return render(request,"tabletennis/add.html",context)

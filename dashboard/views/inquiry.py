@@ -1,6 +1,9 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import inquiryModel
 from django.shortcuts import render
+from django.contrib import messages
+
+
 
 from ..forms.inquiry_form import inquiryForm
 
@@ -15,6 +18,7 @@ def addinquiry(request):
     form=inquiryForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewinquiry")
     context['form']=form
     return render(request,"inquiry/add.html",context)

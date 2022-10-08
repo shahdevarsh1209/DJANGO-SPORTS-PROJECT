@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404,render,redirect
 from ..models import evalutionModel
 from django.shortcuts import render
+from django.contrib import messages
 
 from ..forms.evalution_form import evalutionForm
 
@@ -15,6 +16,7 @@ def addevalution(request):
     form=evalutionForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewevalution")
     context['form']=form
     return render(request,"evalution/add.html",context)

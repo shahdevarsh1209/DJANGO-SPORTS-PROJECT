@@ -1,6 +1,7 @@
-from django.shortcuts import get_object_or_404,render,redirect
+from django.shortcuts import get_object_or_404,render,redirect,HttpResponse
 from ..models import playerModel
 from django.shortcuts import render
+from django.contrib import messages
 
 from ..forms.player_form import playerForm
 
@@ -14,7 +15,10 @@ def addplayer(request):
     context={}
     form=playerForm(request.POST or None)
     if form.is_valid():
+        if len(request.FILES) != 0:
+            form.img2 = request.FILES['img2']
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewplayer")
     context['form']=form
     return render(request,"player/add.html",context)

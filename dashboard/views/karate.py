@@ -2,6 +2,8 @@ from django.shortcuts import get_object_or_404,render,redirect
 from ..models import karateModel
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib import messages
+
 from ..forms.karate_form import karateForm
 import csv
 def viewkarate(request):
@@ -14,6 +16,7 @@ def addkarate(request):
     form=karateForm(request.POST or None)
     if form.is_valid():
         form.save()
+        messages.add_message(request,messages.INFO,'Successfully Created')
         return redirect( "viewkarate")
     context['form']=form
     return render(request,"karate/add.html",context)
